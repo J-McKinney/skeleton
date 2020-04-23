@@ -1,0 +1,11 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const ModelSchema = new Schema({
+    model: { type: String, required: true },
+  date: { type: Date, default: Date.now }
+});
+
+const Model = mongoose.model("Model", ModelSchema);
+
+module.exports = Model;
