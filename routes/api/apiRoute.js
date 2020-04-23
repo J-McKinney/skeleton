@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const controller = require("../../controllers/controller");
 
-router.route("/model/:model").post(controller.create);
+// router.route("/model/:model").post(controller.create);
 
 // Matches with "/api/sentences"
 router.route("/")
